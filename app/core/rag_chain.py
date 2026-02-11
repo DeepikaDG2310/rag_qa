@@ -121,7 +121,7 @@ class RAGChain:
             return answer
         
         except Exception as e:
-            logger.error(f"Can not process the query due to {e}")
+            logger.error(f"Can not process the query due to str{e}")
             raise
 
     async def aquery_with_source(self, question:str)->dict:
