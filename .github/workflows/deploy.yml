@@ -6,7 +6,7 @@ name: CD - Deploy to AWS
 
 on:
   push:
-    branches: [feature]
+    branches: [main]
   workflow_dispatch:  # Allow manual trigger
 
 env:
