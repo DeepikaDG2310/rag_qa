@@ -11,6 +11,12 @@ langchain-qdrant
 langchain-community
 langchain-text-splitters
 
+# #Document Parsers
+# unstructured==0.18.15
+# langchain-unstructured
+# unstructured-inference
+# unstructured[pdf,docx,xlsx,pptx,html,md,image,email]
+
 # Vector Database
 qdrant-client
 

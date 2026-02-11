@@ -1,7 +1,6 @@
 from dotenv import load_dotenv
 
 load_dotenv()
-from langsmith import traceable
 
 from contextlib import asynccontextmanager 
 
@@ -93,7 +92,7 @@ async def global_exception_handler(request:Request, exc=Exception):
 
 if __name__=="__main__":
     import uvicorn
-    load_dotenv()
+
    
     uvicorn.run(
         "app.main:app",
@@ -101,8 +100,3 @@ if __name__=="__main__":
         port=settings.api_port,
         reload=True,
     )
-
-    
-
-
-
